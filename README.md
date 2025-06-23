@@ -1,16 +1,41 @@
 # ejs-html-to-pdf-lite
 
-Convert `.html` or `.ejs` files into PDF using `playwright-core` with full design and CSS support.
+A fast, lightweight, and production-ready alternative to `html-pdf` and `puppeteer` for converting HTML or EJS templates into high-quality PDFs using `playwright-core`, with full design and CSS support.
+
+---
+
+## ✅ Why Use ejs-html-to-pdf-lite?
+
+- 🔥 **Minimal dependencies** – only `playwright-core` + `ejs`
+- 🎨 **Full CSS support** – Flexbox, Grid, custom fonts, inline styles
+- 🖼️ **Base64 image support** – embed images directly in templates
+- 📄 **Supports both `.ejs` and `.html`** – dynamic or static usage
+- 🧾 **Great for invoices, reports, and other document PDFs**
+- 📦 **Tiny install size** – no bundled browser
+- 🛠️ **Supports standard & custom paper sizes**
+- ⚙️ **Headless and production-safe**
+
+---
 
 ## ✅ Features
 
-- Renders full HTML and EJS templates
-- Supports modern CSS (including Flexbox, Grid, etc.)
-- Allows inline <style> tags and embedded CSS within the file
-- Supports images via base64 encoding (no external image links required)
-- Lightweight alternative to Puppeteer
-- Outputs fully styled PDFs
-- Supports multiple paper size options (e.g., A4, Letter, etc.)
+- Converts full HTML and EJS templates into PDF
+- Supports modern CSS (Flexbox, Grid, Google Fonts, etc.)
+- Inline `<style>` and internal CSS fully supported
+- Base64-encoded images for self-contained PDFs
+- Fully styled PDF output
+- Support for standard and custom paper sizes
+
+---
+
+## 📌 Use Cases
+
+- Server-side PDF generation (e.g., invoices, receipts)
+- Email-ready PDFs (attachments, download links)
+- Exporting filled forms using EJS templates
+- Printable reports or dashboards in backend apps
+
+---
 
 ## 📦 Install
 
