@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #2c7be5;
+    }
+    .content {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Hello <%= name %>!</h1>
+    <p>This document was generated on <%= new Date().toLocaleDateString() %></p>
+  </div>
+  
+  <div class="content">
+    <h2>Example PDF Document</h2>
+    <p>This is a simple example showing how to use EJS templates with the ejs-html-to-pdf-lite package.</p>
+    
+    <% if (items && items.length > 0) { %>
+      <h3>Your Items:</h3>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <% items.forEach(function(item) { %>
+          <tr>
+            <td><%= item.name %></td>
+            <td><%= item.quantity %></td>
+            <td>$<%= item.price.toFixed(2) %></td>
+          </tr>
+        <% }); %>
+      </table>
+      <p><strong>Total: $<%= items.reduce((sum, item) => sum + (item.price * item.quantity), 0).toFixed(2) %></strong></p>
+    <% } else { %>
+      <p>No items to display.</p>
+    <% } %>
+  </div>
+  
+  <div class="footer">
+    <p>Generated with ejs-html-to-pdf-lite | Page 1</p>
+  </div>
+</body>
+</html>
