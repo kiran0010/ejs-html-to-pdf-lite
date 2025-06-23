@@ -4,13 +4,13 @@ Convert `.html` or `.ejs` files into PDF using `playwright-core` with full desig
 
 ## ✅ Features
 
--Renders full HTML and EJS templates
--Supports modern CSS (including Flexbox, Grid, etc.)
--Allows inline <style> tags and embedded CSS within the file
--Supports images via base64 encoding (no external image links required)
--Lightweight alternative to Puppeteer
--Outputs fully styled PDFs
--Supports multiple paper size options (e.g., A4, Letter, etc.)
+- Renders full HTML and EJS templates
+- Supports modern CSS (including Flexbox, Grid, etc.)
+- Allows inline <style> tags and embedded CSS within the file
+- Supports images via base64 encoding (no external image links required)
+- Lightweight alternative to Puppeteer
+- Outputs fully styled PDFs
+- Supports multiple paper size options (e.g., A4, Letter, etc.)
 
 ## 📦 Install
 
