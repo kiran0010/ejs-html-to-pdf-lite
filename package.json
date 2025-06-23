@@ -2,13 +2,30 @@
   "name": "ejs-html-to-pdf-lite",
   "version": "1.0.0",
   "description": "Convert HTML or EJS to PDF using Playwright-core with full CSS and design support.",
+  "keywords": [
+    "pdf",
+    "html",
+    "ejs",
+    "playwright",
+    "lightweight",
+    "export"
+  ],
+  "homepage": "https://github.com/kiran0010/ejs-html-to-pdf-lite#readme",
+  "bugs": {
+    "url": "https://github.com/kiran0010/ejs-html-to-pdf-lite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiran0010/ejs-html-to-pdf-lite.git"
+  },
+  "license": "MIT",
+  "author": "kiran Debnath",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {},
-  "keywords": ["pdf", "html", "ejs", "playwright", "lightweight", "export"],
-  "author": "Your Name",
-  "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.9",
     "playwright-core": "^1.44.0"
-  }
+  },
+  "devDependencies": {}
 }
